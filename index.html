@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="boot.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+    <style>
+        body{
+            background-image: url("bg1.png");
+            width: 100%;
+            background-repeat: no-repeat;
+            background-color:#BDE7FF ;
+            /* background-image: linear-gradient(#BDE7FF,aliceblue,white); */
+
+            
+        
+        }
+        .imagepos{
+            position: absolute;
+            left: 5px;
+            top: 5px;
+
+            
+        }
+
+
+        .homepos{
+                position: relative;
+                left: -80px;
+                color: rgb(19, 104, 183);
+        }
+
+        .linkpos{
+            position: relative;
+            left: -60px;
+            color: rgb(19, 104, 183);
+        }
+        .droppos{
+            position: relative;
+            left: -45px;
+            color: rgb(19, 104, 183);
+        }
+        .disablepos{
+            position: relative;
+            left: -38px;
+            color: rgb(19, 104, 183);
+        }
+        .searchformpos{
+            position: relative;
+            left: -30px;
+        }
+        .searchpos{
+            position: relative;
+            left: -25px;
+        }
+
+        /* .line{
+            margin-top: 25px;
+            width: 100%;
+            height: 3px;
+            background-color: rgb(25, 110, 159);
+            opacity: 0.6;
+        } */
+
+        .circle{
+            width: 610px;
+            height: 610px;
+            background-color: rgb(245, 199, 48);
+
+            border-radius: 300px;
+            position: absolute;
+            position: absolute;
+            left: 342px;
+            bottom: 10px;
+            border-color: black;
+            border-style: solid;
+            border-width: 5px;
+
+        }
+        .landingtext{
+            position: absolute;
+            text-align: center;
+            top: 80px;
+            left: 140px;
+            font-size: 50px;
+            font-family:fantasy;
+            letter-spacing:4px;
+            color: rgb(255, 255, 255);
+            -webkit-text-stroke-width: 0px;
+            -webkit-text-stroke-color: black;
+            font-weight: bolder;
+            
+
+        }
+
+        .cards{
+            position: relative;
+            margin-top: 700px;
+            width: 50%;
+            height: 60%;
+            margin-left: 320px;
+        }
+        .textdescribe{
+          position: absolute;
+          top: 320px;
+          left: 87px;
+          color: rgb(255, 255, 255);
+          font-size: 18px;
+        }
+
+        .regbutton{
+          background-color: blueviolet;
+          color: aliceblue;
+          position: absolute;
+          left:590px;
+          top: 560px;
+        
+        }
+
+        .titlepos1{
+          position: absolute;
+          top: 0px;
+          left: 50px;
+          font-family:inherit;
+          font-size: 55px;
+          -webkit-text-fill-color: rgb(73, 89, 97);
+
+        }
+
+        .second{
+          background-image: linear-gradient(#BDE7FF,#f0f8ff,white);
+          width: 100%;
+          height: 700px;
+          position: absolute;
+          top: 800px;
+          background-repeat: no-repeat;
+        }
+        .a{
+          background-color: rgb(249, 246, 224);
+          width: 400px;
+          height: 160px;
+          position: absolute;
+          top: 200px;
+          left: 150px;
+          border-radius: 20px;
+          border-style: solid;
+          border-color:rgb(164, 164, 164);
+          border-width: 4px;
+          font-size: 18px;
+          color:rgb(73, 89, 97);
+          font-weight: 600;
+
+        }
+        .b{
+          background-color: rgb(249, 246, 224);
+          width: 400px;
+          height: 160px;
+          position: absolute;
+          top: 400px;
+          left: 150px;
+          border-radius: 20px;
+          border-style: solid;
+          border-color:rgb(164, 164, 164);
+          border-width: 4px;
+          font-size: 18px;
+          color:rgb(73, 89, 97);
+          font-weight: 600;
+
+        }
+        .c{
+          background-color: rgb(249, 246, 224);
+          width: 400px;
+          height: 160px;
+          position: absolute;
+          top: 200px;
+          left: 700px;
+          border-radius: 20px;
+          border-style: solid;
+          border-color:rgb(164, 164, 164);
+          border-width: 4px;
+          font-size: 18px;
+          color:rgb(73, 89, 97);
+          font-weight: 600;
+
+        }
+        .d{
+          background-color: rgb(249, 246, 224);
+          width: 400px;
+          height: 160px;
+          position: absolute;
+          top: 400px;
+          left: 700px;
+          border-radius: 20px;
+          border-style: solid;
+          border-color:rgb(164, 164, 164);
+          border-width: 4px;
+          font-size: 18px;
+          color:rgb(73, 89, 97);
+          font-weight: 600;
+
+        }
+        .a1{
+          color: rgb(109, 109, 109);
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: 80;
+          position: absolute;
+          top: 40px;
+          text-align: left;
+          left: 140px;
+
+          
+        }
+        .a2{
+          position: absolute;
+          left: 850px;
+          top: 85px;
+          font-size: 20px;
+        }
+        .arrow{
+          font-weight: 200;
+          font-size: 40px;
+        }
+
+        .camp1{
+          width: 90px;
+          height: 90px;
+          border-radius: 50px;
+          background-color: rgb(0, 0, 0);
+          position: absolute;
+          top: 240px;
+          left: 180px;
+          background-image: url("https://res.klook.com/image/upload/c_fill,w_750,h_560/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/d0041b08-Nagarkot-hiking-3.jpg");
+          background-size: 120px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-color:rgb(70, 69, 65) ;
+          border-style: solid;
+          border-width: 3px;
+          
+        }
+        .camp2{
+          width: 90px;
+          height: 90px;
+          border-radius: 50px;
+          background-color: rgb(0, 0, 0);
+          position: absolute;
+          top: 240px;
+          left: 725px;
+          background-image: url("https://cdn.kimkim.com/files/a/images/eb0bee8e3b5b99817840b90293e6bfe277962cae/big-9bbcc4eea99293bda96245322cd7c9bb.jpg");
+          background-size: 135px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-color:rgb(70, 69, 65) ;
+          border-style: solid;
+          border-width: 3px;
+
+
+          
+        }
+        .camp3{
+          width: 90px;
+          height: 90px;
+          border-radius: 50px;
+          background-color: rgb(0, 0, 0);
+          position: absolute;
+          top: 440px;
+          left: 725px;
+          background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/db/Adinath_Temple_Aadi_Nath_Temple_Chobhar_Dada_Kirtipur_Kathmandu_Nepal_Rajesh_Dhungana3.jpg");
+          background-size: 135px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-color:rgb(70, 69, 65) ;
+          border-style: solid;
+          border-width: 3px;
+          
+          
+        }
+        .camp4{
+          width: 90px;
+          height: 90px;
+          border-radius: 50px;
+          background-color: rgb(0, 0, 0);
+          position: absolute;
+          top: 440px;
+          left: 180px;
+          background-image: url("https://nepaltraveller.com/images/main/1609680875.sidetrackimagehiking.jpg");
+          background-size: 135px;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-color:rgb(70, 69, 65) ;
+          border-style: solid;
+          border-width: 3px;
+         
+          
+          
+        }
+
+
+        .third{
+          background-image: url("thirdsection.png");
+          background-size: cover;
+          height: 750px;
+          width: 100%;
+          position: absolute;
+          top: 1500px;
+          background-repeat: no-repeat;
+        }
+        .titlepos2{
+          position: absolute;
+          top:50px;
+          left: 50px;
+          font-family:inherit;
+          font-size: 55px;
+          -webkit-text-fill-color:rgb(73, 89, 97);
+          width: 310px;
+          height: 120px;
+          
+          border-radius: 20px;
+          margin-top: -20px;
+          
+          
+
+        }
+        .titlepos3{
+          position: absolute;
+          top: 10px;
+          left: 10px;
+        }
+        .new1{
+          position: absolute;
+          left: -110px;
+          top: 150px;
+        }
+        .new2{
+          position: absolute;
+          left: -110px;
+          top: 250px;
+        }
+        .new3{
+          position: absolute;
+          left: -110px;
+          top: 350px;
+        }
+        .box1{
+          
+          margin-left: 100px;
+          width: 400px;
+          margin-left: 250px;
+          height: 110px;
+          border-radius: 1px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-weight: 400;
+          font-size: 20px;
+          padding: 5px;
+
+        }
+        .image1{
+          width: 110px;
+          height: 110px;
+          background-image: url("quality.png");
+          background-position: center;
+          background-size: cover;
+          position: absolute;
+          top: 0px;
+        }
+        .image2{
+          width: 110px;
+          height: 110px;
+          background-image: url("insurance.png");
+          background-position: center;
+          background-size: cover;
+          position: absolute;
+          top: 0px;
+          margin-top: 24px;
+          margin-left: -1px;
+        }
+        .image3{
+          width: 110px;
+          height: 110px;
+          background-image: url("fire.png");
+          background-position: center;
+          background-size: cover;
+          position: absolute;
+          top: 0px;
+          margin-top:48px ;
+          margin-left: -1px;
+          
+        }
+        .align1{
+          position: absolute;
+          left: 450px;
+        }
+        .align2{
+          position: absolute;
+          left: 410px;
+        }
+
+        .banner{
+          width: 700px;
+          position: absolute;
+          top: 2140px;
+          height: 60px;
+          left: 300px;
+          border-radius: 30px;
+        }
+        .btnshape{
+          border-radius: 20px;
+          width: 120px;
+          border-color: rgb(243, 243, 243);
+          border-style: solid;
+          height: 35px;
+          position: absolute;
+          right: 50px;
+          margin-top: 13px;
+          color: rgb(42, 125, 78);
+        }
+        .align3{
+          position: absolute;
+          left: 65px;
+          top: 16px;
+          color: aliceblue;
+          font-size: 18px;
+        }
+        .fourth{
+          background-image: url("fourthsection.png");
+          width: 100%;
+          height: 700px;
+          position: absolute;
+          top: 2250px;
+          background-repeat: no-repeat;
+          height: 800px;
+        }
+        .titlepos4{
+          position: absolute;
+          top:70px;
+          left: 420px;
+          font-family:inherit;
+          font-size: 55px;
+          -webkit-text-fill-color:rgb(73, 89, 97);
+          border-radius: 20px;
+          margin-top: -20px;
+
+        }
+
+        .review1{
+          position: absolute;
+          width: 500px;
+          height: 120px;
+          background-color: rgb(255, 254, 235);
+          top: 200px;
+          left: 200px;
+          border-radius: 10px;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 50px;
+          box-shadow: 3px 3px 15px rgb(160, 160, 160);
+          font-size: 20px;
+          color: rgb(73, 89, 97);
+          font-family:inherit;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+        .review2{
+          position: absolute;
+          width: 500px;
+          height: 120px;
+          background-color: rgb(255, 254, 235);
+          top: 400px;
+          left: 700px;
+          border-radius: 10px;
+          border-top-left-radius: 15px;
+          border-bottom-left-radius: 50px;
+          box-shadow: 3px 3px 15px rgb(160, 160, 160);
+          font-size: 20px;
+          color: rgb(73, 89, 97);
+          font-family:inherit;
+          font-weight: 500;
+          letter-spacing: 1px;
+        }
+        .dp1{
+          width: 90px;
+          height: 90px;
+          background-image: url("review1.jpeg");
+          border-radius: 50px;
+          position: absolute;
+          right: 20px;
+          bottom: 15px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-color: rgb(177, 153, 123);
+          border-width: 3px;
+          border-style: solid;
+        }
+        .dp2{
+          width: 90px;
+          height: 90px;
+          background-image: url("review2.jpeg");
+          border-radius: 50px;
+          position: absolute;
+          left: 20px;
+          bottom: 15px;
+          background-position: center;
+          background-size: cover;
+          border-color: rgb(177, 153, 123);
+          border-width: 3px;
+          border-style: solid;  
+        }
+        .align4{
+          position: absolute;
+          font-size: 16px;
+          right: 40px;
+          word-spacing: 2px;
+          letter-spacing: 0.5px;
+          top: 35px;
+
+        }
+        .align5{
+          position: absolute;
+          font-size: 16px;
+          left: 40px;
+          word-spacing: 2px;
+          letter-spacing: 0.5px;
+          top: 35px;
+
+        }
+
+        .footer{
+          width: 100%;
+          height:180px;
+          background-color: #FCFEFC;
+          position: absolute;
+          top: 620px;
+        }
+
+        .list1{
+          position: absolute;
+          left: 410px;
+          top: 18px;
+        }
+        .list2{
+          position: absolute;
+          left: 560px;
+          top: 18px;
+
+        }
+        .font{
+          font-size: 18px;
+          font-family: inherit;
+          font-weight: 600;
+        }
+        .mail{
+          color: rgb(2, 85, 149);
+          position: absolute;
+          top: 120px;
+          left: 800px;
+        }
+        .social{
+          position: absolute;
+          top: 90px;
+          left:1050px ;
+          font-size: 40px;
+          margin-left: 5px;
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" width="250" height="110" class="imagepos">
+          </a>
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link  homepos" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkpos" href="Camps.html">Camps</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle droppos" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Events
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Devil & Angel</a></li>
+                    <li><a class="dropdown-item" href="#">Artistic Depiction</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Hype or Hike</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item disablepos">
+                  <a class="nav-link" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 searchformpos" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success searchpos" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+      </nav>  
+
+<!-- line -->
+      <div align="center" >
+        <div class="circle">
+            <p class="landingtext"> <b>
+              Go Beyond<br> Summer With <br>Our Camps</b>
+              <br>
+              <p class="textdescribe">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Pellentesque a pharetra risus.Phasellus at tortor rutrum,<br> vulputate dui non.
+              </p>
+          </p>
+          
+        </div>
+        <button type="button" class="btn btn-lg regbutton">Register!</button>
+        
+      </div>
+
+
+
+
+
+<div>
+    <div class="second">
+      <h1 class="titlepos1">Upcoming<br>Summer Camps</h1>
+      <div class="container text-center">
+        <div class="row row-cols-2">
+          <div class="col a">Nagarkot Camping<br><p class="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero.</p></div>
+        
+          <div>
+          <div class="col b">Chitlang Trek<br><p class="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero.</p></div>
+          <div class="col c">Chitwan Trip<br><p class="a1" >Lorem ipsum dolor sit amet, <br>consecteturi adipiscing elit.<br> Nullam libero.</p></div>
+          <div class="col d">Chobhar Hiking<br><p class="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam libero.</p></div>
+          <p class="camp1"></p>
+          <p class="camp2"></p>
+          <p class="camp3"></p>
+          <p class="camp4"></p>
+        </div>
+        </div>
+        <div>
+          <a href="Camps.html">
+          <h2 class="a2">Discover Other Camps &nbsp &nbsp<i class="bi bi-arrow-right arrow"></i></h2></a>
+       
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="third">
+  <h1 class="titlepos2"><p class="titlepos3">What's New</p></h1>
+  <div class="container text-center ">
+    <div class="row row-cols-2 margin1">
+      <div class="col new1"><div class="box1">
+        <div class="align1">
+          <b>
+        Qualified Staff
+      </b>
+      </div>
+      <p align="right" class="mt-5">
+        Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.
+      </p>
+        <div class="image1">
+      </div>
+      </div>
+    </div>
+      <div class="col new2"><div class="box1 mt-4">
+        <div class="align1"><b>
+        Best Insurance
+      </b>
+        </div>
+        <p align="right" class="mt-5">
+          Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.
+        </p>
+        <div class="image2">
+        
+      </div>
+      </div>
+    </div>
+      <div class="col new3"><div class="box1 mt-5">
+        <div class="align2">
+          <b>
+        Unforgettable Memories
+      </b>
+      </div>
+      <p align="right" class="mt-5">
+        Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.
+      </p>
+        <div class="image3">
+  
+      </div>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+
+</div>
+
+<!-- banner -->
+
+<div class="banner bg-success bg-gradient">
+  
+  <button class="btn-light btnshape"><b>More Info</b></button>
+  <p class="align3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+</div>
+
+<!-- fourth section -->
+<div class="fourth">
+  <h1 class="titlepos4" align="center">Our Happy Campers</h1>
+  <div class="review1" align="center">
+    Alex Jason
+    <div class="dp1">
+
+    </div>
+    <p class="align5" align="left">
+      Maecenas elementum nulla lacus. Donec <br>faucibus in nisl a sagittis. Duis lorem erat,<br>gravida eget.
+    </p>
+  </div>
+  <div class="review2" align="center">
+    Harley Madison
+    <div class="dp2">
+
+    </div>
+    <p class="align4" align="right">
+      Maecenas elementum nulla lacus. Donec <br>faucibus in nisl a sagittis. Duis lorem erat,<br>gravida eget.
+    </p>
+  
+  </div>
+
+  <!-- footer contact -->
+
+  <div class="footer">
+    <img src="logo.png" width="340px" class="mt-5">
+    <div class="list1">
+      <ul class="list-group list-group-flush font">
+        <li class="list-group-item">Home</li>
+        <li class="list-group-item">Events</li>
+        <li class="list-group-item">About Us</li>
+      </ul>
+    </div>
+
+    <div class="list2">
+      <ul class="list-group list-group-flush font">
+        <li class="list-group-item">From Parents</li>
+        <li class="list-group-item">Blog</li>
+        <li class="list-group-item">Contact Us</li>
+      </ul>
+    </div>
+      <!-- mail -->
+  <div class="mail">
+    <p><i class="bi bi-envelope-at-fill">summercamp@gmail.com</i></p>
+  </div>
+
+  <!-- social Handle -->
+  <div class="social">
+    <p>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter-x mx-4"></i>
+      <i class="bi bi-facebook"></i>
+    </p>
+  </div>
+
+  </div>
+
+
+  
+
+</div>
+
+
+
+
+
+
+    
+</body>
+</html>
